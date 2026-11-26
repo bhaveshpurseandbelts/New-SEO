@@ -433,7 +433,7 @@ document.getElementById('form').addEventListener('submit',e=>{e.preventDefault()
 const t=`Hello Bhavesh Purse & Belts, I am ${f.get('n')}${f.get('b')?' from '+f.get('b'):''}. I am looking for: ${f.get('c')}. ${f.get('m')||''}`;
 window.open('https://wa.me/919887701944?text='+encodeURIComponent(t),'_blank','noopener')});
 // 3D carousel
-const rr=document.getElementById('rr'),rs=document.getElementById('rs'),H=[H=['पर्स और वॉलेट','बेल्ट','रुमाल और हैंडकरचीफ','मोज़े','कैप','ऊनी टोपी और सर्दियों का सामान','धूप के चश्मे']],pn=[];
+const rr=document.getElementById('rr'),rs=document.getElementById('rs'),H=['पर्स और वॉलेट','बेल्ट','रुमाल और हैंडकरचीफ','मोज़े','कैप','ऊनी टोपी और सर्दियों का सामान','धूप के चश्मे'],pn=[];
 P.forEach((p,i)=>{const e=document.createElement('div');e.className='rp';e.innerHTML=`<div><span>${p[0]}</span><b>${p[1]}</b><i>${H[i]}</i></div>`;e.style.transform=`rotateY(${i*60}deg) translateZ(310px)`;rr.appendChild(e);pn.push(e)});
 let a=0,v=-.28,dn=false,cx;
 rs.addEventListener('pointerdown',e=>{dn=true;cx=e.clientX;rs.setPointerCapture(e.pointerId)});
